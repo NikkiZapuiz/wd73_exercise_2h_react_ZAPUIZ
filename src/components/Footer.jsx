@@ -51,7 +51,7 @@ function Footer() {
                 </div>
 
                 <div className="text-center p-3" style={{ backgroundColor: "#7E979B" , font:"#E2E1E5"}}>
-                    © {new Date().getFullYear()} Fruitify. All rights reserved.
+                    © {new Date().getFullYear()} Artify. All rights reserved.
                 </div>
             </footer>
         </div>

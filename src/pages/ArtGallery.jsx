@@ -16,11 +16,7 @@ function ArtGallery() {
             })
             .then((data) => {
                 console.log(data.data);
-
-                // Filter out data with 403 error
-                const validArts = data.data.filter((item) => item.image_id && item.image_id !== 403);
-
-                setArts(validArts);
+                setArts(data.data);
             })
             .catch((error) => {
                 console.error("Error fetching artworks:", error);
