@@ -36,6 +36,7 @@ function ArtGallery() {
                         place_of_origin={data.place_of_origin}
                         medium_display={data.medium_display}
                         alt_text={data.alt_text}
+                        alt_image_ids={data.alt_text}
                     />
                 ))}
             </div>
