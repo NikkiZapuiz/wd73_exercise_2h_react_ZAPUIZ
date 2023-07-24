@@ -28,15 +28,6 @@ function Footer() {
                         </div>
                     </section>
                     <hr className="my-3" style={{ color: "#B8ACB0" }}/>
-                    <section className="mb-2">
-                        <div className="row d-flex justify-content-center">
-                            <div className="col-lg-8 text-black">
-                                {/* <p>
-                                Cats are known for their independent nature, but they also form strong bonds with their owners. They can provide companionship and emotional support, which can be particularly beneficial for individuals living alone or those in need of a comforting presence.
-                                </p> */}
-                            </div>
-                        </div>
-                    </section>
                     <section className="text-center mb-5">
                         <a href="" className="text-black me-4">
                             <i className="fab fa-facebook-f"></i>
