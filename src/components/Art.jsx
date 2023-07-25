@@ -12,7 +12,7 @@ function Arts(props) {
                         onError={(e) =>
                             (e.target.onerror = null)(
                             (e.target.src = 
-                                "../../public/No-Image-Placeholder.svg.png")
+                                "/No-Image-Placeholder.svg.png")
                             )}
 
                         style={{ height: '40vh' }}
