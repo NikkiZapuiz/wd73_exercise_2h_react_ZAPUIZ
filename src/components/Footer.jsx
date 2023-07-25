@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" style={{backgroundColor:"rgba(255, 255, 255, 0.8", padding: "10px", borderRadius: "4px"}}>
             <footer className="text-center text-white container-fluid shadow">
                 <div className="container">
                     <section className="mt-5">

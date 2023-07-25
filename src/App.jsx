@@ -4,28 +4,31 @@ import Footer from "./components/Footer";
 import ArtGallery from "./pages/ArtGallery";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-// import { Provider } from "react-redux";
+import { Provider } from "react-redux";
+import store from "./store/store"
+
+
 
 function App() {
     return (
         <>
-            {/* <Provider> */}
-            <BrowserRouter>
-                <Navbar />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route
-                        path="/artwork"
-                        element={
-                            <>
-                                <ArtGallery />
-                            </>
-                        }
-                    />
-                </Routes>
-                <Footer />
-            </BrowserRouter>
-            {/* </Provider> */}
+            <Provider store={store}>
+                <BrowserRouter>
+                    <Navbar />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route
+                            path="/artwork"
+                            element={
+                                <>
+                                    <ArtGallery />
+                                </>
+                            }
+                        />
+                    </Routes>
+                    <Footer />
+                </BrowserRouter>
+            </Provider>
         </>
     );
 }

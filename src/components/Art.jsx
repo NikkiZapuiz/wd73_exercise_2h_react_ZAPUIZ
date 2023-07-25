@@ -24,9 +24,9 @@ function Arts(props) {
                 </div>
                 <div className="card-block px-2">
                     <h4 className="card-title">{title}</h4>
-                    <p className="card-text">Artist: {artist_display}</p>
-                    <p className="card-text">Place of Origin: {place_of_origin}</p>
-                    <p className="card-text">Medium: {medium_display}</p>
+                    <p className="card-text"><strong>Artist:</strong> {artist_display}</p>
+                    <p className="card-text"><strong>Place of Origin:</strong> {place_of_origin}</p>
+                    <p className="card-text"><strong>Medium:</strong> {medium_display}</p>
                     {/* <p className="card-text">{alt_text}</p> */}
                 </div>
                 <div className="w-100"></div>

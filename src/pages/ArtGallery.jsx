@@ -21,24 +21,26 @@ function ArtGallery() {
             .catch((error) => {
                 console.error("Error fetching artworks:", error);
             });
-    }, []);
+    }, [setArts]);
 
     return (
         <>
             <div className="d-flex flex-wrap justify-content-center mt-5">
-                {arts.map((data) => (
-                    <Arts
-                        key={data.id}
-                        title={data.title}
-                        image_id={data.image_id}
-                        artist_display={data.artist_display}
-                        id={data.id}
-                        place_of_origin={data.place_of_origin}
-                        medium_display={data.medium_display}
-                        alt_text={data.alt_text}
-                        alt_image_ids={data.alt_text}
-                    />
-                ))}
+                {
+                    arts.map(
+                        art => <Arts
+                            key={art.id}
+                            title={art.title}
+                            image_id={art.image_id}
+                            artist_display={art.artist_display}
+                            id={art.id}
+                            place_of_origin={art.place_of_origin}
+                            medium_display={art.medium_display}
+                            alt_text={art.alt_text}
+                            alt_image_ids={art.alt_text}
+                        />
+                    )
+                }
             </div>
         </>
     );
