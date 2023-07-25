@@ -5,7 +5,7 @@ function Arts(props) {
 
     return (
         <>
-            <div className="card m-2" style={{ width: "18rem", height: "105vh" }}>
+            <div className="card m-2" style={{ width: "19.5rem", height: "85vh" }}>
                 <div className="card-header border-0">
                     <img
                         src={`https://www.artic.edu/iiif/2/${image_id || alt_image_ids}/full/843,/0/default.jpg`}

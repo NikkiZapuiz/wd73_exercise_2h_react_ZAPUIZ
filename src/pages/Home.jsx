@@ -44,6 +44,11 @@ function Home() {
                 style={{ maxWidth: "100%", overflow: "hidden" }}
             >
                 <div className="carousel-inner" style={{ marginTop: "40vh"}}>
+                <p className="text-center mb-5" style={{fontSize: "1.5rem", fontFamily: "cursive", textShadow: "2px 2px 6px rgba(0, 0, 0, 0.5)", backgroundColor: "rgba(255, 255, 255, 0.93", padding: "10px", borderRadius: "4px"  }}>
+                At Artify, we believe that art has the power to inspire, transform, and connect people from all walks of life. Our platform is dedicated to curating an exceptional collection of artworks that showcase the talent and creativity of artists from around the world. Whether you're an avid art collector, an aspiring enthusiast, or simply seeking to add beauty to your living space, Artify is here to make your art journey an unforgettable one.
+                ry and immerse yourself in a world of captivating masterpieces. We handpick each artwork to ensure that it speaks to your soul and sparks joy within you. From stunning paintings that evoke emotions to mesmerizing sculptures that tell profound stories, our carefully curated selection covers a wide spectrum of artistic expressions, ensuring there's something for every art lover.
+                </p>
+                <h3 className="text-center mb-5" style={{fontSize: "2.5rem", fontFamily: "cursive", textShadow: "2px 2px 6px rgba(0, 0, 0, 0.5)", backgroundColor: "rgba(255, 255, 255, 0.93", padding: "10px", borderRadius: "4px"  }}>Fascinating Artworks</h3>
                     {artWork.map((art, index) => (
                         <div key={index} className={`carousel-item ${index === currentImageIndex ? "active" : ""}`}>
                             <img src={art} className="d-block mx-auto img-fluid w-75" style={{ borderRadius: "3%", maxHeight: "80vh"}} alt={`Artwork ${index}`} />
@@ -51,11 +56,11 @@ function Home() {
                     ))}
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon text-dark" style={{ filter: "invert(100%)", marginTop: "40vh" }} aria-hidden="true"></span>
+                    <span className="carousel-control-prev-icon text-dark" style={{ filter: "invert(100%)", marginTop: "90vh", backgroundColor: "rgba(255, 255, 255, 0.1" }} aria-hidden="true"></span>
                     <span className="visually-hidden">Previous</span>
                 </button>
                 <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" onClick={handleNextClick}>
-                    <span className="carousel-control-next-icon text-dark" style={{ filter: "invert(100%)", marginTop: "40vh" }} aria-hidden="true"></span>
+                    <span className="carousel-control-next-icon text-dark" style={{ filter: "invert(100%)", marginTop: "90vh", backgroundColor: "rgba(255, 255, 255, 0.1" }} aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>

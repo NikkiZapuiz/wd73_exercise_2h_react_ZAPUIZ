@@ -29,7 +29,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ backgroundColor: "rgba(255, 255, 255, 0.8", padding: "10px", borderRadius: "4px" }}>
             <div className="container-fluid">
-                <a className="navbar-brand " href="#" style={{ fontFamily: 'cursive', fontWeight: 600, fontSize: '3vw' }}>Artify</a>
+                <a className="navbar-brand " href="#" style={{ fontFamily: 'cursive', fontWeight: 600, fontSize: '2.5vw' }}>Artify</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -44,7 +44,7 @@ function Navbar() {
                     </ul>
                 </div>
             </div>
-            <div className="container" style={{ marginLeft: "49vw" }}>
+            <div className="container" style={{ marginLeft: "30vw" }}>
                 {user ? (
                     <>
                         <p><strong>Welcome, {user}!</strong></p>
