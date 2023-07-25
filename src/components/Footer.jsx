@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Footer() {
     return (
         <div className="container-fluid" style={{backgroundColor:"rgba(255, 255, 255, 0.8", padding: "10px", borderRadius: "4px"}}>
@@ -7,12 +8,17 @@ function Footer() {
                         <div className="row text-center d-flex justify-content-center pt-5">
                             <div className="col-md-2">
                                 <h6 className="text-uppercase font-weight-bold">
-                                    <a className="nav-link active text-black" aria-current="page" href="#"><strong>Home</strong></a>
+                                    <a className="nav-link active text-black" aria-current="page" ><strong><Link to="/" style={{ textDecoration: 'none', color: 'black' }}>Home</Link></strong></a>
                                 </h6>
                             </div>
                             <div className="col-md-2">
                                 <h6 className="text-uppercase font-weight-bold">
-                                <a className="nav-link active text-black" aria-current="page" href="#"><strong>Art Gallery</strong></a>
+                                <a className="nav-link active text-black" aria-current="page" href="#"><strong><Link to="/artwork" style={{ textDecoration: 'none', color: 'black' }}>Art Gallery</Link></strong></a>
+                                </h6>
+                            </div>
+                            <div className="col-md-2">
+                                <h6 className="text-uppercase font-weight-bold">
+                                <a className="nav-link active text-black" aria-current="page" href="#"><strong><Link to="/fav" style={{ textDecoration: 'none', color: 'black' }}>Favorites</Link></strong></a>
                                 </h6>
                             </div>
                             <div className="col-md-2">
