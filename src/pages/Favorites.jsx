@@ -6,7 +6,7 @@ function Favorites() {
     return (
         <>
             <h3>Favorites</h3>
-                <div className="border shadow m-3">
+                <div className="border shadow m-3 bg-light">
                     {
                     art.map(
                         artItem => {

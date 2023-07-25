@@ -41,6 +41,9 @@ function Navbar() {
                         <li className="nav-item">
                             <a className="nav-link"><Link to="/artwork" style={{ textDecoration: 'none', color: 'black' }}><strong>Art Gallery</strong></Link></a>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link"><Link to="/fav" style={{ textDecoration: 'none', color: 'black' }}><strong>Favorites</strong></Link></a>
+                        </li>
                     </ul>
                 </div>
             </div>

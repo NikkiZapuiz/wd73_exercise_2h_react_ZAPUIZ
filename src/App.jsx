@@ -5,7 +5,7 @@ import ArtGallery from "./pages/ArtGallery";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import { Provider } from "react-redux";
-import Favorites from "./components/Favorites";
+import Favorites from "./pages/Favorites";
 import { store } from "./store/store";
 
 
@@ -18,11 +18,11 @@ function App() {
                     <Navbar />
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/fav" element={<Favorites />} />
                         <Route
                             path="/artwork"
                             element={
                                 <>
-                                    <Favorites />
                                     <ArtGallery />
                                 </>
                             }
