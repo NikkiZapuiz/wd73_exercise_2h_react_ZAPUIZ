@@ -5,7 +5,8 @@ import ArtGallery from "./pages/ArtGallery";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import { Provider } from "react-redux";
-import store from "./store/store"
+import Favorites from "./components/Favorites";
+import { store } from "./store/store";
 
 
 
@@ -21,6 +22,7 @@ function App() {
                             path="/artwork"
                             element={
                                 <>
+                                    <Favorites />
                                     <ArtGallery />
                                 </>
                             }
