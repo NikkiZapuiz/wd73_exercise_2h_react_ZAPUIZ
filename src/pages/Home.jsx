@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 
 function Home() {
     const artWork = [
-        "/public/guardian.webp",
-        "/public/Christmast charity.webp",
-        "/public/artwork brows.webp",
-        "/public/man.webp",
-        "/public/cave.jpeg",
-        "/public/outsider.jpeg",
-        "/public/surf.webp",
+        "/guardian.webp",
+        "/Christmast charity.webp",
+        "/artwork brows.webp",
+        "/man.webp",
+        "/cave.jpeg",
+        "/outsider.jpeg",
+        "/surf.webp",
     ];
 
     useEffect(() => {
@@ -30,7 +30,7 @@ function Home() {
     return (
         <>
             <div style={{ position: "relative", width: "100%", height: "50vh" }}>
-                <video src="/public/pexels-juancarlos-córdova-7492690 (1080p).mp4" style={{ width: "100%", height: "85vh", objectFit: "cover" }} autoPlay muted loop />
+                <video src="/pexels-juancarlos-córdova-7492690 (1080p).mp4" style={{ width: "100%", height: "85vh", objectFit: "cover" }} autoPlay muted loop />
                 <div style={{ position: "absolute", top: "95%", left: "50%", transform: "translate(-50%, -50%)" }}>
                     <h1 style={{ color: "white", fontSize: "3rem", fontFamily: "cursive", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>Welcome to Artify</h1>
                     <p style={{ color: "white", fontFamily: "cursive", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}>"Where Masterpieces Await: Explore Art's Timeless Beauty."</p>
