@@ -9,7 +9,7 @@ function Navbar() {
     const user = useSelector((state) => state.auth.user);
     const dispatch = useDispatch();
 
-    const [showLoginForm, setShowLoginForm] = useState(false);
+    // const [showLoginForm, setShowLoginForm] = useState(false);
     const [username, setUsername] = useState("");
 
     const handleLogin = (e) => {
@@ -20,10 +20,6 @@ function Navbar() {
 
     const handleLogout = () => {
         dispatch(logoutSuccess());
-    }
-
-    const toggleLoginForm = () => {
-        setShowLoginForm((prevShowLoginForm) => !prevShowLoginForm)
     }
 
     return (
@@ -63,10 +59,6 @@ function Navbar() {
                         />
                         <button type="submit">Login</button>
                     </form>
-                )}
-                {!showLoginForm && (
-                    <Link to="#" onClick={toggleLoginForm} className="login-link">
-                    </Link>
                 )}
             </div>
         </nav>
