@@ -13,6 +13,17 @@ function Favorites() {
                             return (
                                 <div key={`{artItem.id}`} className="d-flex border m-3">
                                     <p><strong>{artItem.title}</strong></p>
+                                    <img
+                                        src={artItem.thumbnail}
+                                        onError={(e) =>
+                                            (e.target.onerror = null)(
+                                            (e.target.src = 
+                                                "/No-Image-Placeholder.svg.png")
+                                            )}
+
+                                        style={{ height: '40vh' }}   
+                                    />
+                                        
                                     <p> {artItem.artist_display}</p>
                                     <button>Remove</button>
                                 </div>

@@ -38,7 +38,7 @@ function Home() {
             </div>
             <br />
             <div
-                id="carouselExampleAutoplaying"
+                id="carousel"
                 className="carousel slide"
                 data-bs-ride="carousel"
                 style={{ maxWidth: "100%", overflow: "hidden" }}

@@ -4,13 +4,17 @@ import { useDispatch } from 'react-redux';
 
 
 function Arts(props) {
-    const { title, image_id, artist_display, place_of_origin, medium_display, alt_text, alt_image_ids } = props;
+    const { id, title, thumbnail, artist_display, place_of_origin, medium_display, alt_text } = props;
     const dispatch = useDispatch()
 
     function handleClick() {
         dispatch(addArtToFavorites({
+            id,
             title,
-            artist_display
+            artist_display,
+            thumbnail,
+            category
+
         }))
     }
 
@@ -19,7 +23,7 @@ function Arts(props) {
             <div className="card m-2" style={{ width: "19.5rem", height: "110vh" }}>
                 <div className="card-header border-0">
                     <img
-                        src={`https://www.artic.edu/iiif/2/${image_id || alt_image_ids}/full/843,/0/default.jpg`}
+                        src={thumbnail}
                         onError={(e) =>
                             (e.target.onerror = null)(
                             (e.target.src = 

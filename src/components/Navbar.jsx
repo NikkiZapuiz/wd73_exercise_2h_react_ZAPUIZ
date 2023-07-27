@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
-import { loginSuccess } from "../store/authActions";
-import { logoutSuccess } from "../store/authActions";
+import { loginSuccess } from "../store/authReducer";
+import { logoutSuccess } from "../store/authReducer";
 
 
 function Navbar() {
-    const user = useSelector((state) => state.auth.user);
+    const user = useSelector((state) => state.user);
     const dispatch = useDispatch();
 
     // const [showLoginForm, setShowLoginForm] = useState(false);
@@ -32,13 +32,13 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page"><Link to="/" style={{ textDecoration: 'none', color: 'black' }}><strong>Home</strong></Link></a>
+                            <Link to="/" style={{ textDecoration: 'none', color: 'black' }} className="nav-link active" aria-current="page"><strong>Home</strong></Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link"><Link to="/artwork" style={{ textDecoration: 'none', color: 'black' }}><strong>Art Gallery</strong></Link></a>
+                            <Link to="/artwork" style={{ textDecoration: 'none', color: 'black' }} className="nav-link"><strong>Art Gallery</strong></Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link"><Link to="/fav" style={{ textDecoration: 'none', color: 'black' }}><strong>Favorites</strong></Link></a>
+                            <Link to="/fav" style={{ textDecoration: 'none', color: 'black' }} className="nav-link"><strong>Favorites</strong></Link>
                         </li>
                     </ul>
                 </div>

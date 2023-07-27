@@ -8,27 +8,17 @@ function Footer() {
                         <div className="row text-center d-flex justify-content-center pt-5">
                             <div className="col-md-2">
                                 <h6 className="text-uppercase font-weight-bold">
-                                    <a className="nav-link active text-black" aria-current="page" ><strong><Link to="/" style={{ textDecoration: 'none', color: 'black' }}>Home</Link></strong></a>
+                                    <Link className="nav-link active text-black" aria-current="page" to="/" style={{ textDecoration: 'none', color: 'black' }}><strong>Home</strong></Link>
                                 </h6>
                             </div>
                             <div className="col-md-2">
                                 <h6 className="text-uppercase font-weight-bold">
-                                <a className="nav-link active text-black" aria-current="page" href="#"><strong><Link to="/artwork" style={{ textDecoration: 'none', color: 'black' }}>Art Gallery</Link></strong></a>
+                                <Link to="/artwork" style={{ textDecoration: 'none', color: 'black' }} className="nav-link active text-black" aria-current="page" href="#"><strong>Art Gallery</strong></Link>
                                 </h6>
                             </div>
                             <div className="col-md-2">
                                 <h6 className="text-uppercase font-weight-bold">
-                                <a className="nav-link active text-black" aria-current="page" href="#"><strong><Link to="/fav" style={{ textDecoration: 'none', color: 'black' }}>Favorites</Link></strong></a>
-                                </h6>
-                            </div>
-                            <div className="col-md-2">
-                                <h6 className="text-uppercase font-weight-bold">
-                                    <a className="nav-link active text-black" aria-current="page" href="#"></a>
-                                </h6>
-                            </div>
-                            <div className="col-md-2">
-                                <h6 className="text-uppercase font-weight-bold">
-                                    <a className="nav-link active text-black" aria-current="page" href="#"></a>
+                                <Link to="/fav" style={{ textDecoration: 'none', color: 'black' }} className="nav-link active text-black" aria-current="page" href="#"><strong>Favorites</strong></Link>
                                 </h6>
                             </div>
                         </div>
