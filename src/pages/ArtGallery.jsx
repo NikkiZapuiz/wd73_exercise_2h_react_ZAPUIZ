@@ -25,7 +25,7 @@ function ArtGallery() {
             });
     }, []);
 
-    // Filter out duplicate category titles
+    // Filter category titles
     const uniqueCategories = Array.from(new Set(categories.map((category) => category.classification_title)));
 
     return (
